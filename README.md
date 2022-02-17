@@ -14,8 +14,9 @@ Slack の投稿についたリアクションの合計数を計算するプロ�
 $ cp .env.example .env
 ```
 
-.env の `SLACK_USER_TOKEN` に Slack の USER_TOKEN （`xoxp-` で始まるもの）をセットする．
+- .env の `SLACK_USER_TOKEN` に Slack の USER_TOKEN （`xoxp-` で始まるもの）をセットする．
 なお，該当する Slack App には `reactions:read` 権限を付与すること．
+- .env の `WORKSPACE_NAME` に Slack のワークスペース名をセットする．
 
 ```
 $ pip install -r requirements.txt
