@@ -8,3 +8,4 @@ dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 SLACK_USER_TOKEN = os.environ.get('SLACK_USER_TOKEN')
+WORKSPACE_NAME = os.environ.get('WORKSPACE_NAME')

@@ -4,6 +4,7 @@ import re
 import config
 
 SLACK_USER_TOKEN = config.SLACK_USER_TOKEN
+WORKSPACE_NAME = config.WORKSPACE_NAME
 
 def split_message_url(url: str) -> dict:
     """ Slack 投稿の URL から channel と ts を抽出する
@@ -14,7 +15,7 @@ def split_message_url(url: str) -> dict:
     Raises:
         ValueError: URL スキーマが不正の場合に発生
     """
-    splited = list(re.findall('https://yumemi\.slack\.com/archives/(\w+)/p(\d+)(\d{6})', url)[0])
+    splited = list(re.findall('https://%s\.slack\.com/archives/(\w+)/p(\d+)(\d{6})' % (WORKSPACE_NAME), url)[0])
     if len(splited) != 3:
         raise ValueError('URL format is invalid.')
 
