@@ -1,8 +1,9 @@
 # Slack Reactions Counter
-<img src="https://img.shields.io/badge/python-v3.9.4-blue">
-<img src="https://img.shields.io/badge/requests-v2.25.1-blue">
-<img src="https://img.shields.io/badge/dotenv-v0.19.2-blue">
-<br>
+<p>
+    <img src="https://img.shields.io/badge/python-v3.9.4-blue">
+    <img src="https://img.shields.io/badge/requests-v2.25.1-blue">
+    <img src="https://img.shields.io/badge/dotenv-v0.19.2-blue">
+</p>
 
 Slack の投稿についたリアクションの合計数を計算するプログラムです．
 
